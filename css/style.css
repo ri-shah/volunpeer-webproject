@@ -1,0 +1,33 @@
+body, html{
+  height: 100%;
+    margin: 0;
+}
+body.landing{
+  background-image: url("../images/helping_hands.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul.nav li{
+    display: inline-block;
+    padding-right: 10px;
+    background-color: grey;
+}
+
+ul.nav a{
+  color: white;
+}
+#home {
+  color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  border: black;
+  font-family:'Ubuntu', sans-serif;
+}
