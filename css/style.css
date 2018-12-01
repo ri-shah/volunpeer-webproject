@@ -1,6 +1,6 @@
 body, html{
   height: 100%;
-    margin: 0;
+  margin: 0;
 }
 body.landing{
   background-image: url("../images/helping_hands.png");
@@ -30,4 +30,41 @@ ul.nav a{
   font-size: 80px;
   border: black;
   font-family:'Ubuntu', sans-serif;
+}
+
+.menu-area li a{
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 30px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+.menu-area li{
+  list-style: none;
+  display: inline-block;
+}
+.custom-padding{
+  padding-top: 25px;
+}
+nav{
+  position: relative;
+  padding: 0.2px 20px 10px 0.2px;
+  text-align: right;
+  z-index: 1;
+  background: #333;
+  margin: 0 auto;
+  width:calc(100% - 60px);
+  height: 50px;
+  border-radius: 20px;
+}
+.menu-area li a:hover{
+  background: #f4b642;
+  color: #fff;
 }
