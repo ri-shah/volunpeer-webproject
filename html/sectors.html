@@ -4,7 +4,7 @@
     <title>Volunpeer</title>
       <link rel="stylesheet" type="text/css" href="../css/style.css">
   </head>
-  <body>
+  <body class="sector_information">
 
     <div class="custom-padding">
       <nav>
@@ -19,24 +19,53 @@
 
     <div id='sectors'>
       <h1>You can find opportunities in the following sectors</h1>
-        <div class="container">
-            <div class="panel panel-default" style="border: 2px solid black">
-              <div class="panel-body">Environment</div>
-            </div>
+  </div>
+        <div class="space">
+        <button class="collapsible" id="environment">Environment</button>
+          <div class="content">
+            <p>we need to add text here</p>
+          </div>
         </div>
 
-        <div class="container">
-            <div class="panel panel-default" style="border: 2px solid black">
-              <div class="panel-body">Education</div>
-            </div>
+        <div class="space">
+        <button class="collapsible" id="refugees">Refugees</button>
+          <div class="content">
+            <p>we need to add text here</p>
+          </div>
         </div>
 
-        <div class="container">
-            <div class="panel panel-default" style="border: 2px solid blue">
-              <div class="panel-body">Care</div>
-            </div>
+        <div class="space">
+        <button class="collapsible" id="care">Care</button>
+          <div class="content">
+            <p>we need to add text here</p>
+          </div>
         </div>
+
+        <div class="space">
+        <button class="collapsible" id="animals">Animals</button>
+          <div class="content">
+            <p>we need to add text here</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+</script>
 
   </body>
 </html>
